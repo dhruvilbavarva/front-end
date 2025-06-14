@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --host 0.0.0.0 --port $PORT",
-    "build": "ng build",
+    "start": "node server.js",
+    "build": "ng build --configuration=production"
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -51,6 +51,8 @@
     "popper.js": "^1.16.1",
     "rxjs": "~7.5.0",
     "zone.js": "~0.14.10"
+    "express": "^4.18.2"
+
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.2.19",
